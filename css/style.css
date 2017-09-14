@@ -1,0 +1,151 @@
+@import url("https://fonts.googleapis.com/css?family=Anton|Raleway:300,400,500,700,900");
+a {
+  text-decoration: none; }
+  a:hover, a:focus, a:active {
+    text-decoration: none; }
+
+body {
+  font-family: "Raleway", sans-serif;
+  font-size: 1.8em; }
+
+.banner {
+  width: 100%;
+  height: 100vh;
+  background: url("../images/bg-home.jpg");
+  background-size: cover;
+  position: relative; }
+  .banner:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to top, rgba(114, 0, 137, 0.6) 0%, rgba(205, 40, 214, 0.8) 100%); }
+  .banner .text-banner {
+    color: #fff;
+    position: absolute;
+    z-index: 2;
+    bottom: 40vh;
+    left: 0px;
+    right: 0px;
+    text-align: center; }
+
+h2 {
+  font-size: 4em;
+  font-family: "Anton", sans-serif; }
+
+h3 {
+  font-size: 3em;
+  font-weight: 100; }
+
+.arrow-down {
+  position: absolute;
+  bottom: 100px;
+  left: 0px;
+  right: 0px;
+  z-index: 2;
+  text-align: center;
+  font-size: 1.5em; }
+  .arrow-down a {
+    color: #fff; }
+  .arrow-down i {
+    display: block;
+    font-size: 3em;
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    bottom: -50px;
+    text-align: center;
+    animation: 1.5s arrowJump infinite;
+    -webkit-animation: 1.5s arrowJump infinite; }
+
+.nopadding {
+  padding: 0px; }
+
+figure {
+  position: relative;
+  width: 100%;
+  height: 400px;
+  overflow: hidden;
+  background: #ccc; }
+  figure img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    filter: grayscale(100%);
+    transition: all .3s linear; }
+  figure figcaption {
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    text-align: center;
+    color: #fff;
+    font-size: 2em;
+    font-family: "Anton", sans-serif;
+    z-index: 3;
+    top: 160px;
+    opacity: 0;
+    transition: all .3s linear; }
+  figure .btn {
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    text-align: center;
+    color: #fff;
+    font-size: 2em;
+    font-size: 1em;
+    border: 1px solid #fff;
+    border-radius: 10px;
+    max-width: 100px;
+    padding: 2px 0px;
+    margin: 0px auto;
+    top: 220px;
+    opacity: 0;
+    transition: all .3s linear;
+    z-index: 3; }
+  figure:after {
+    content: '';
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to top, rgba(114, 0, 137, 0.8) 0%, #cd28d6 100%);
+    opacity: 0;
+    z-index: 2;
+    transition: all .3s linear; }
+  figure:hover:after {
+    opacity: 1; }
+  figure:hover figcaption {
+    opacity: 1; }
+  figure:hover .btn {
+    opacity: 1; }
+
+footer {
+  padding: 100px 0px;
+  text-align: center; }
+  footer h4 {
+    color: #cd28d6;
+    font-size: 3em;
+    font-weight: 500; }
+  footer h3 {
+    margin: 50px 0px;
+    font-size: 2em; }
+  footer ul {
+    list-style: none;
+    padding: 0px; }
+    footer ul li {
+      margin: 20px 0px; }
+      footer ul li i {
+        color: #720089;
+        font-size: 1.5em !important;
+        margin-right: 20px; }
+
+@keyframes arrowJump {
+  0% {
+    margin-bottom: 0px; }
+  50% {
+    margin-bottom: -10px; }
+  100% {
+    margin-bottom: 0px; } }
+
+/*# sourceMappingURL=style.css.map */

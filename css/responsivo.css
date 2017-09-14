@@ -1,0 +1,14 @@
+@media screen and (max-width: 55em) {
+    
+    h2 {
+        font-size: 1.8em;
+    }
+    
+    h3 {
+        font-size: 1.5em;
+    }
+    
+    .arrow-down {
+        font-size: 1em;
+    }
+}

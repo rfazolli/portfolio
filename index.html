@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsivo.css">
+    <title>Rafael Fazolli</title>
+</head>
+
+<body>
+
+    <section class="banner">
+        <div class="text-banner">
+            <h2>Olá, meu nome é Rafael Rodrigo Fazolli</h2>
+            <h3>e sou Web Designer</h3>
+        </div>
+        
+        <div class="arrow-down">
+            <a href="#port" class="scroll">
+                Confira abaixo meu portfólio.
+                <i class="fa fa-angle-down" aria-hidden="true"></i>
+            </a>
+        </div>
+    </section>
+    
+    <section id="port" class="port">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-4 nopadding">
+                    <a href="https://www.cpaagora.com.br/" target="_blank">
+                        <figure>
+                            <figcaption>CPA AGORA!</figcaption>
+                            <div class="btn">Confira</div>
+                            <img src="images/cpa.jpg">
+                        </figure>
+                    </a>
+                </div>
+                
+                <div class="col-lg-4 nopadding">
+                    <a href="http://lebeautecoiffeur.com.br/" target="_blank">
+                        <figure>
+                            <figcaption>LE BEAUTÉ!</figcaption>
+                            <div class="btn">Confira</div>
+                            <img src="images/le-beaute.jpg">
+                        </figure>
+                    </a>
+                </div>
+                
+                <div class="col-lg-4 nopadding">
+                    <a href="http://mmb.b2smkt.com/" target="_blank">
+                        <figure>
+                            <figcaption>MASSAMADRE!</figcaption>
+                            <div class="btn">Confira</div>
+                            <img src="images/massa-madre.jpg">
+                        </figure>
+                    </a>
+                </div>
+                
+                <div class="col-lg-4 nopadding">
+                    <a href="http://rfazollidesigner.com.br/mtfried/" target="_blank">
+                        <figure>
+                            <figcaption>MR. FRIED!</figcaption>
+                            <div class="btn">Confira</div>
+                            <img src="images/mt-fried.jpg">
+                        </figure>
+                    </a>
+                </div>
+                
+                <div class="col-lg-4 nopadding">
+                    <a href="http://fokustreine.com.br/" target="_blank">
+                        <figure>
+                            <figcaption>FOKUS TREINE!</figcaption>
+                            <div class="btn">Confira</div>
+                            <img src="images/fokus.jpg">
+                        </figure>
+                    </a>
+                </div>
+                
+                <div class="col-lg-4 nopadding">
+                    <a href="http://festadopeaodeamericana.com.br/" target="_blank">
+                        <figure>
+                            <figcaption>FESTA DO PEÃO DE AMERICANA!</figcaption>
+                            <div class="btn">Confira</div>
+                            <img src="images/festa-do-peao.jpg">
+                        </figure>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h4>Contato</h4>
+                    
+                    <h3>Rafael Rodrigo Fazolli</h3>
+                    <ul>
+                        <li><i class="fa fa-mobile" aria-hidden="true"></i> (19) 98227-0509</li>
+                        <li><i class="fa fa-envelope-o" aria-hidden="true"></i> rafa.fazolli@gmail.com</li>
+                        <li><i class="fa fa-linkedin-square" aria-hidden="true"></i> <a href="https://www.linkedin.com/in/rafaelfazolli/" target="_blank">/rafaelfazolli</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- jQuery (obrigatório para plugins JavaScript do Bootstrap) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Inclui todos os plugins compilados (abaixo), ou inclua arquivos separadados se necessário -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="https://use.fontawesome.com/46644be57b.js"></script>
+
+    
+    <script type="text/javascript">
+        jQuery(document).ready(function($) {
+            $(".scroll").click(function(event) {
+                event.preventDefault();
+                $('html,body').animate({
+                    scrollTop: $(this.hash).offset().top
+                }, 800);
+            });
+        });
+    </script>
+</body>
+
+</html>
